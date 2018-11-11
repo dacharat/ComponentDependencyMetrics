@@ -6,8 +6,8 @@ Result:
 
 Run R project and see graph(MacOS):
 ```sh
-$ chmod +x ./graph/run.sh
-$ ./graph/run.sh
+$ chmod +x ./run.sh
+$ ./run.sh
 ```
 
 Run R project and see graph(Window, Linux):
