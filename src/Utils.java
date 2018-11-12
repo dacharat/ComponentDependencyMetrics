@@ -5,7 +5,7 @@ public class Utils {
 
 	public static void main(String[] args) {
 
-		File jcdFile = new File("/Users/jack/eclipse-workspace/groovy/src/main/java/org/codehaus/groovy");
+		File jcdFile = new File("/Users/jack/eclipse-workspace/groovy/src/main/java/org/codehaus/groovy/transform");
 
 		String[] jcdFiles = jcdFile.list();
 		FileRead read = new FileRead();

@@ -1,4 +1,5 @@
 # ComponentDependencyMetrics
+> Credit ploykk
 
 Result:
 ![alt text](https://github.com/dacharat/ComponentDependencyMetrics/blob/master/graph/Screen%20Shot%202561-11-11%20at%2014.45.09.png)
