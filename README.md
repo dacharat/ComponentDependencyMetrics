@@ -1,7 +1,7 @@
 # ComponentDependencyMetrics
 > Credit ploykk
 
-# Member
+### Member
 - Dacharat Pankong 5910546643
 - Pittayut Sothanakul 5910546678
 
