@@ -1,5 +1,4 @@
 # ComponentDependencyMetrics
-> Credit ploykk
 
 ### Member
 - Dacharat Pankong 5910546643
