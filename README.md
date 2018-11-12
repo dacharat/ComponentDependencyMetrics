@@ -5,7 +5,7 @@
 - Dacharat Pankong 5910546643
 - Pittayut Sothanakul 5910546678
 
-Result:
+### Result
 ![alt text](https://github.com/dacharat/ComponentDependencyMetrics/blob/master/graph/Screen%20Shot%202561-11-12%20at%2016.40.10.png)
 
 

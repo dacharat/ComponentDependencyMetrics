@@ -1,37 +1,3 @@
-
-//import java.io.File;
-//import java.text.DecimalFormat;
-//
-//public class Utils {
-//
-//	public static void main(String[] args) {
-//
-//		File jcdFile = new File("/Users/tharitpongsaneh/Desktop/apache-tomcat-9.0.13-src/java/org/apache/coyote");
-//
-//		String[] jcdFiles = jcdFile.list();
-//		FileRead read = new FileRead();
-//
-//		System.out.println("Files Found: " + jcdFiles.length);
-//
-//		for (String myFile : jcdFiles) {
-//			if (myFile.contains(".java"))
-//				read.readInFile(jcdFile.toString() + "/" + myFile);
-//		}
-//
-//		PackageInfo pack = new PackageInfo(read.getNa(), read.getNc(), read.getCa(), read.getCe());
-//		DecimalFormat df = new DecimalFormat("#.######");
-//
-//		System.out.println("ca: " + read.getCa());
-//		System.out.println("ce: " + read.getCe());
-//		System.out.println("nc: " + read.getNc());
-//		System.out.println("na: " + read.getNa());
-//		System.out.println("Instability: " + df.format(pack.getInstability()));
-//		System.out.println("Abstractness: " + df.format(pack.getAbstractness()));
-//
-//	}
-//
-//}
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -51,19 +17,25 @@ public class Utils {
 					String[] files = folder.list();
 					for (String myFile : files) {
 						if (myFile.contains(".java")) {
-							read.readInFile(folder.toString() + "/" + myFile);
+							read.readTextFile(folder.toString() + "/" + myFile);
 						}
 					}
 					PackageInfo pack = new PackageInfo(read.getNa(), read.getNc(), read.getCa(), read.getCe());
 					DecimalFormat df = new DecimalFormat("#.######");
 					try {
-						Double instability = Double.parseDouble(df.format(pack.getInstability()));
-						Double abstractness = Double.parseDouble(df.format(pack.getAbstractness()));
-						if (!instability.isNaN() && !abstractness.isNaN())
-							if (instability <= 1 && abstractness <= 1)
-								System.out.println(instability + ", " + abstractness);
+						if (!((Double) pack.getInstability()).isNaN() && !((Double) pack.getAbstractness()).isNaN()) {
+							// System.out.println(df.format(pack.getInstability()) + ", " +
+							// df.format(pack.getAbstractness()));
+							System.out.println("Ce: " + read.getCe());
+							System.out.println("Ca: " + read.getCa());
+							System.out.println("Nc: " + read.getNc());
+							System.out.println("Na: " + read.getNa());
+							System.out.println("Instability: " + df.format(pack.getInstability()));
+							System.out.println("Abstractness: " + df.format(pack.getAbstractness()));
+							System.out.println("------------------------------");
+						}
 					} catch (Exception e) {
-						// TODO: handle exception
+						// e.printStackTrace();
 					}
 				}
 			});
