@@ -2,7 +2,7 @@
 > Credit ploykk
 
 Result:
-![alt text](https://github.com/dacharat/ComponentDependencyMetrics/blob/master/graph/Screen%20Shot%202561-11-11%20at%2014.45.09.png)
+![alt text](https://github.com/dacharat/ComponentDependencyMetrics/blob/master/graph/Screen%20Shot%202561-11-12%20at%2016.40.10.png)
 
 
 Run R project and see graph(MacOS):
