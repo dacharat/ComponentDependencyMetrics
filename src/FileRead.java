@@ -15,9 +15,13 @@ public class FileRead {
 		this.na = 0;
 	}
 
-	public void readInFile(String direc, String name) {
-		String jdkReleaseFile = direc + "/" + name;
-		readTextFile(jdkReleaseFile);
+//	public void readInFile(String direc, String name) {
+//		String jdkReleaseFile = direc + "/" + name;
+//		readTextFile(jdkReleaseFile);
+//	}
+
+	public void readInFile(String path) {
+		readTextFile(path);
 	}
 
 	public void readTextFile(String fileToRead) {
